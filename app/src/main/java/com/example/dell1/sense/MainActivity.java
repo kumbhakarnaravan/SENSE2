@@ -170,6 +170,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             Xval.setText("XAcc_Value: " + sensorEvent.values[0]);
             Yval.setText("YAcc_Value: " + sensorEvent.values[1]);
             Zval.setText("ZAcc_Value: " + sensorEvent.values[2]);
+
             saveT(s,f);
         }else if(sensor.getType() == Sensor.TYPE_GYROSCOPE){
             Log.d(TAG, "onSensorChanged: X:" + sensorEvent.values[0] + "Y:" + sensorEvent.values[1] + "Z:" + sensorEvent.values[2]);
@@ -177,6 +178,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             XGval.setText("XGyro_Value: " + sensorEvent.values[0]);
             YGval.setText("YGyro_Value: " + sensorEvent.values[1]);
             ZGval.setText("ZGyro_Value: " + sensorEvent.values[2]);
+
             saveT(s1,f1);
         }else if(sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
             Log.d(TAG, "onSensorChanged: X:" + sensorEvent.values[0] + "Y:" + sensorEvent.values[1] + "Z:" + sensorEvent.values[2]);
@@ -184,6 +186,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             XMval.setText("XMagno_Value: " + sensorEvent.values[0]);
             YMval.setText("YMagno_Value: " + sensorEvent.values[1]);
             ZMval.setText("ZMagno_Value: " + sensorEvent.values[2]);
+
             saveT(s2, f2);
         }
     }
